@@ -3,7 +3,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 38px 48px;
   position: relative;
 
@@ -11,10 +11,6 @@ header {
     display: inline-block;
     width: 68px;
     height: 64px;
-  }
-
-  .navigation-menu {
-    margin-top: 24px;
   }
   
   input[type="checkbox"]:checked ~ nav {
@@ -44,5 +40,28 @@ header {
       text-decoration: none;
     }
 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-menu {
+    margin-top: 0;
+    width: 467px;
+
+    label {
+      display: none;
+    }
+
+    nav {
+      display: block;
+    }
+
+    .list-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
