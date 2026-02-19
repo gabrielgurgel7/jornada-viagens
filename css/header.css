@@ -1,3 +1,4 @@
+/* MOBILE */
 header {
   background-color: var(--background-tertiary-color);
   display: flex;
@@ -12,7 +13,15 @@ header {
     width: 68px;
     height: 64px;
   }
-  
+
+  .img-mobile {
+    display: block;
+  }
+
+  .img-desktop {
+    display: none;
+  }
+
   input[type="checkbox"]:checked ~ nav {
     display: block;
     position: absolute;
@@ -27,7 +36,7 @@ header {
   nav {
     display: none;
   }
-  
+
   .list-links {
     list-style: none;
 
@@ -35,14 +44,14 @@ header {
       margin: 16px 0;
     }
 
-    li a{
+    li a {
       color: var(--text-secudary-color);
       text-decoration: none;
     }
-
   }
 }
 
+/* TABLET */
 @media screen and (min-width: 768px) {
   .navigation-menu {
     margin-top: 0;
@@ -63,5 +72,38 @@ header {
       margin: 0;
       padding: 0;
     }
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 38px 120px;
+
+    .logo {
+      display: inline-block;
+      width: 260px;
+      height: 64px;
+    }
+
+    .img-desktop {
+      display: block;
+    }
+
+    .img-mobile {
+      display: none;
+    }
+    
+    .list-links {
+      li a:hover{
+        color: var(--secundary-color);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    padding: 38px 160px;
   }
 }
