@@ -1,52 +1,113 @@
-.card {
-  color: var(--text-secudary-color);
-  width: 312px;
-  height: 288px;
-  background-color: var(--background-tertiary-color);
-  box-sizing: border-box;
-  padding: 24px 16px;
-  border-radius: 16px;
-  text-align: center;
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 
-  header {
-    display: block;
-    position: static;
-    background: transparent;
-    padding: 0;
-    margin-bottom: 24px;
+  .card {
+    color: var(--text-secudary-color);
+    width: 312px;
+    height: 288px;
+    background-color: var(--background-tertiary-color);
+    box-sizing: border-box;
+    padding: 24px 16px;
+    border-radius: 16px;
+    text-align: center;
 
-    p {
-      font-size: 20px;
-      font-weight: var(--text-weight);
+    header {
+      display: block;
+      position: static;
+      background: transparent;
+      padding: 0;
+      margin-bottom: 24px;
+
+      p {
+        font-size: 20px;
+        font-weight: var(--text-weight);
+      }
+
+      h3 {
+        font-size: 40px;
+        font-weight: var(--title-weight);
+        margin: 8px 0 0;
+
+        span {
+          display: inline-block;
+          font-size: 32px;
+          margin-top: 24px;
+        }
+      }
     }
+  }
 
-    h3 {
-      font-size: 40px;
-      font-weight: var(--title-weight);
-      margin: 8px 0 0;
+  /* BG DOS CARDS */
+  .japao {
+    background-image: url(../img/bg-card-japao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-      span {
-        display: inline-block;
-        font-size: 32px;
-        margin-top: 24px;
+  .san-andreas {
+    background-image: url(../img/bg-card-san-andreas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .paraiba {
+    background-image: url(../img/bg-card-paraiba.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .manaus {
+    background-image: url(../img/bg-card-manaus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .offers-cards {
+    .card {
+      width: 420px;
+      height: 308px;
+
+      header {
+        h3 {
+          font-size: 48px;
+
+          span {
+            font-size: 40px;
+          }
+        }
       }
     }
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .card {
-    width: 588px;
-    height: 308px;
+@media screen and (min-width: 1440px) {
+  .offers-cards {
+    .card {
+      width: 588px;
+    }
+  }
+}
 
-    header {
-      h3 {
-        font-size: 48px;
-
-        span {
-          font-size: 40px;
-        }
-      }
+@media screen and (min-width: 1920px) {
+  .offers-cards {
+    .card {
+      width: 625px;
     }
   }
 }
