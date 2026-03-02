@@ -39,14 +39,19 @@ header {
 
   .list-links {
     list-style: none;
+    font-size: 1.5rem;
 
     li {
       margin: 16px 0;
-    }
 
-    li a {
-      color: var(--text-secudary-color);
-      text-decoration: none;
+      a {
+        color: var(--text-secudary-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--secundary-color);
+      }
     }
   }
 }
@@ -67,7 +72,7 @@ header {
 
     .list-links {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       margin: 0;
       padding: 0;
@@ -93,9 +98,9 @@ header {
     .img-mobile {
       display: none;
     }
-    
+
     .list-links {
-      li a:hover{
+      li a:hover {
         color: var(--secundary-color);
       }
     }

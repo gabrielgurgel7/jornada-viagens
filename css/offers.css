@@ -12,6 +12,8 @@
     display: block;
     position: static;
     background: transparent;
+    padding: 0;
+    margin-bottom: 24px;
 
     p {
       font-size: 20px;
@@ -28,21 +30,6 @@
         font-size: 32px;
         margin-top: 24px;
       }
-    }
-  }
-
-  footer {
-    .button {
-      display: inline-block;
-      width: 280px;
-      height: 64px;
-      color: var(--text-secudary-color);
-      background-color: var(--primary-color);
-      font-weight: var(--title-weight);
-      font-size: 20px;
-      border-radius: 16px;
-      text-decoration: none;
-      line-height: 64px;
     }
   }
 }
