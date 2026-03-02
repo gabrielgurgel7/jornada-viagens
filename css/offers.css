@@ -2,7 +2,7 @@
   color: var(--text-secudary-color);
   width: 312px;
   height: 288px;
-  background-color: aqua;
+  background-color: var(--background-tertiary-color);
   box-sizing: border-box;
   padding: 24px 16px;
   border-radius: 16px;
@@ -29,6 +29,23 @@
         display: inline-block;
         font-size: 32px;
         margin-top: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 588px;
+    height: 308px;
+
+    header {
+      h3 {
+        font-size: 48px;
+
+        span {
+          font-size: 40px;
+        }
       }
     }
   }
