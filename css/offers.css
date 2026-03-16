@@ -42,25 +42,25 @@
 
   /* BG DOS CARDS */
   .japao {
-    background-image: url(../img/bg-card-japao.png);
+    background-image: url(../img/img-places/bg-card-japao.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .san-andreas {
-    background-image: url(../img/bg-card-san-andreas.png);
+    background-image: url(../img/img-places/bg-card-san-andreas.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .paraiba {
-    background-image: url(../img/bg-card-paraiba.png);
+    background-image: url(../img/img-places/bg-card-paraiba.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .manaus {
-    background-image: url(../img/bg-card-manaus.png);
+    background-image: url(../img/img-places/bg-card-manaus.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
