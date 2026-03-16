@@ -1,9 +1,4 @@
 .categories {
-  margin-bottom: 80px;
-  .section-title {
-    margin-top: 64px;
-  }
-
   .categories-cards {
     display: flex;
     flex-direction: row;
