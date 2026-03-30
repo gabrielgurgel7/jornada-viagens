@@ -14,10 +14,12 @@
       padding: 24px 16px;
       border-radius: 16px;
       text-align: center;
+      position: relative;
 
       header {
         display: block;
-        position: static;
+        /* position: static; */
+        position: relative;
         background: transparent;
         padding: 0;
         margin-bottom: 24px;
@@ -64,6 +66,20 @@
       background-image: url(../img/img-places/bg-card-manaus.png);
       background-repeat: no-repeat;
       background-size: cover;
+    }
+
+    .overlay::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.253);
+      border-radius: 16px;
+      z-index: 0;
+    }
+
+    .overlay > * {
+      position: relative;
+      z-index: 1;
     }
   }
 }
