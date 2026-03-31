@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  .container-grid {
+  .container-flex {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
@@ -50,6 +50,24 @@
       .image.people {
         background-image: url(../img/tablet-e-desktop/people.png);
         grid-area: people;
+      }
+    }
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .payments {
+    .container-flex {
+      flex-direction: row;
+      align-items: center;
+
+      .text-content {
+        width: 40%;
+      }
+
+      .image-content {
+        width: 70%;
       }
     }
   }

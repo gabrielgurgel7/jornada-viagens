@@ -2,11 +2,17 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
+
   .destination-items {
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    position: relative;
+
     .item {
-      width: 312px;
       margin-bottom: 40px;
+      background-color: var(--background-secundary-color);
+      border-radius: 16px;
 
       header {
         display: block;
@@ -15,10 +21,10 @@
 
         .img-item {
           height: 360px;
-          width: 312px;
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
+          border-radius: 16px;
         }
 
         h4 {
@@ -35,19 +41,21 @@
       footer {
         .button {
           width: 312px;
+          /* position: absolute;
+          bottom: 0; */
         }
       }
     }
 
     .item:nth-child(1) {
       .img-item {
-        background-image: url(../img/mobile/tokyo-mobile.png);
+        background-image: url(../img/tablet-e-desktop/tokyo-tablet-desktop.png);
       }
     }
 
     .item:nth-child(2) {
       .img-item {
-        background-image: url(../img/mobile/osaka-mobile.png);
+        background-image: url(../img/tablet-e-desktop/osaka-tablet-desktop.png);
       }
     }
   }

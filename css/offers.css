@@ -1,13 +1,15 @@
 .offers {
   .offers-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - 24px) / 2));
     gap: 24px;
 
     .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       color: var(--text-secudary-color);
-      width: 312px;
+      /* width: 312px; */
       height: 288px;
       background-color: var(--background-tertiary-color);
       box-sizing: border-box;
@@ -15,6 +17,7 @@
       border-radius: 16px;
       text-align: center;
       position: relative;
+      justify-content: center;
 
       header {
         display: block;
@@ -84,7 +87,7 @@
   }
 }
 
-/* TABLET */
+/* TABLET
 @media screen and (min-width: 768px) {
   .offers-cards {
     display: flex;
@@ -92,9 +95,9 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
+} */
 
-/* DESKTOP */
+/* DESKTOP
 @media screen and (min-width: 1024px) {
   .offers-cards {
     .card {
@@ -128,4 +131,4 @@
       width: 625px;
     }
   }
-}
+} */
