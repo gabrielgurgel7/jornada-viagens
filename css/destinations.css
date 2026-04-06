@@ -11,7 +11,7 @@
 
     .item {
       margin-bottom: 40px;
-      background-color: var(--background-secundary-color);
+      /* background-color: var(--background-secundary-color); */
       border-radius: 16px;
 
       header {
