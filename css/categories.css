@@ -1,59 +1,70 @@
 .categories {
   .categories-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
 
     .card {
       text-decoration: none;
-      margin: 0;
+      background-color: var(--background-secundary-color);
+      border-radius: 16px;
 
       article {
-        height: 170px;
+        height: 150px;
+        padding: 16px;
+        /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        background-color: var(--background-secundary-color);
-        border-radius: 16px;
-        padding: 24px 16px;
+        justify-content: center;
 
-        div {
-          img {
-            height: 80px;
-            width: 80px;
-            /* background-color: aqua; */
-          }
+        div img {
+          height: 60px;
+          width: 60px;
+          /* border: 1px solid red; */
         }
 
         h4 {
-          display: flex;
+          font-size: 16px;
           color: var(--text-primary-color);
+          /* border: 1px solid red; */
           text-align: center;
-          text-wrap: wrap;
-          margin: 0;
-          /* background-color: aqua; */
+        }
+      }
+    }
+
+    /* 📲 Tablet */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+
+      .card article {
+        height: 170px;
+
+        div img {
+          height: 70px;
+          width: 70px;
+        }
+
+        h4 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    /* 💻 Desktop */
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+
+      .card article {
+        div img {
+          height: 80px;
+          width: 80px;
+        }
+
+        h4 {
+          font-size: 28px;
         }
       }
     }
   }
 }
-
-/* TABLET
-@media screen and (min-width: 768px) {
-  .categories-cards {
-    article {
-      width: 220px;
-      height: 170px;
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .categories-cards {
-    article {
-      width: 300px;
-      height: 170px;
-    }
-  }
-} */

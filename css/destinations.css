@@ -5,7 +5,7 @@
 
   .destination-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 24px;
     position: relative;
 
@@ -45,6 +45,16 @@
           bottom: 0; */
         }
       }
+    }
+
+    /* 📲 Tablet */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 💻 Desktop */
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .item:nth-child(1) {

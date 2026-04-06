@@ -1,81 +1,100 @@
 .offers {
   .offers-cards {
     display: grid;
-    grid-template-columns: repeat(2, calc((100% - 24px) / 2));
-    gap: 24px;
+    grid-template-columns: 1fr; /* Mobile (1 coluna) */
+    gap: 16px;
 
     .card {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      /* align-items: center; */
       color: var(--text-secudary-color);
-      /* width: 312px; */
-      height: 288px;
+      height: 260px;
       background-color: var(--background-tertiary-color);
       box-sizing: border-box;
-      padding: 24px 16px;
+      padding: 20px 12px;
       border-radius: 16px;
       text-align: center;
       position: relative;
       justify-content: center;
 
       header {
-        display: block;
-        /* position: static; */
         position: relative;
         background: transparent;
         padding: 0;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
 
         p {
-          font-size: 20px;
-          font-weight: var(--text-weight);
+          font-size: 16px;
         }
 
         h3 {
-          font-size: 40px;
-          font-weight: var(--title-weight);
-          margin: 8px 0 0;
+          font-size: 28px;
 
           span {
-            display: inline-block;
-            font-size: 32px;
-            margin-top: 24px;
+            font-size: 20px;
+            margin-top: 16px;
           }
         }
       }
     }
 
+    /* 📲 Tablet */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+
+      .card {
+        height: 280px;
+
+        header {
+          p {
+            font-size: 18px;
+          }
+
+          h3 {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+
+    /* 💻 Desktop */
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 🖥️ Desktop grande */
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     /* BG DOS CARDS */
     .japao {
-      background-image: url(../img/img-places/bg-card-japao.png);
-      background-repeat: no-repeat;
-      background-size: cover;
+      background: url(../img/img-places/bg-card-japao.png) no-repeat
+        center/cover;
     }
 
     .san-andreas {
-      background-image: url(../img/img-places/bg-card-san-andreas.png);
-      background-repeat: no-repeat;
-      background-size: cover;
+      background: url(../img/img-places/bg-card-san-andreas.png) no-repeat
+        center/cover;
     }
 
     .paraiba {
-      background-image: url(../img/img-places/bg-card-paraiba.png);
-      background-repeat: no-repeat;
-      background-size: cover;
+      background: url(../img/img-places/bg-card-paraiba.png) no-repeat
+        center/cover;
     }
 
     .manaus {
-      background-image: url(../img/img-places/bg-card-manaus.png);
-      background-repeat: no-repeat;
-      background-size: cover;
+      background: url(../img/img-places/bg-card-manaus.png) no-repeat
+        center/cover;
     }
 
     .overlay::before {
       content: "";
       position: absolute;
       inset: 0;
-      background-color: rgba(0, 0, 0, 0.253);
+      background-color: rgba(0, 0, 0, 0.357);
       border-radius: 16px;
       z-index: 0;
     }
@@ -86,49 +105,3 @@
     }
   }
 }
-
-/* TABLET
-@media screen and (min-width: 768px) {
-  .offers-cards {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-} */
-
-/* DESKTOP
-@media screen and (min-width: 1024px) {
-  .offers-cards {
-    .card {
-      width: 420px;
-      height: 308px;
-
-      header {
-        h3 {
-          font-size: 48px;
-
-          span {
-            font-size: 40px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .offers-cards {
-    .card {
-      width: 588px;
-    }
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .offers-cards {
-    .card {
-      width: 625px;
-    }
-  }
-} */
