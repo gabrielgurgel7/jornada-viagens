@@ -1,20 +1,31 @@
 /* MOBILE */
-.hero {
+.hero .hero-img,
+.bottom-hero .hero-img {
   width: 100%;
-  h2 {
-    padding: 88px 24px;
-    margin: 0;
-    font-weight: var(--text-weight);
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.5;
-  }
 }
 
-.hero-img {
+.hero h2 {
+  margin: 0;
+  font-weight: var(--text-weight);
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.hero .hero-img {
   height: 400px;
   width: 100%;
+  padding: 0;
   background-image: url("../img/mobile/hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom-hero .hero-img {
+  height: 400px;
+  width: 100%;
+  background-image: url("../img/desktop/pre-footer.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -22,38 +33,26 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-  .hero {
-    h2 {
-      padding: 88px 60px;
-      font-size: 32px;
-    }
+  .hero h2 {
+    padding: 88px 60px;
+    font-size: 32px;
   }
 
-  .hero-img {
+  .hero .hero-img {
     height: 620px;
-    width: 100%;
     background-image: url("../img/tablet/hero-tablet.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 }
 
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
-  .hero {
-    h2 {
-      padding: 88px 120px;
-      font-size: 32px;
-    }
+  .hero h2 {
+    padding: 88px 120px;
+    font-size: 32px;
   }
 
-  .hero-img {
+  .hero .hero-img {
     height: 620px;
-    width: 100%;
     background-image: url("../img/desktop/hero-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 }
