@@ -1,74 +1,73 @@
+/* MOBILE */
 .payments {
   display: flex;
   flex-direction: column;
+}
 
-  .container-flex {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.payments .container-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
-    .text-content {
-      grid-area: text-content;
-      /* border: 1px solid red; */
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      /* padding-right: 24px; */
-    }
+/* texto */
+.payments .container-flex .text-content {
+  grid-area: text-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
 
-    .image-content {
-      grid-area: image-content;
-      /* border: 1px solid red; */
-      display: grid;
-      gap: 24px;
-      grid-template-columns: repeat(2, calc((100% - 24px) / 2));
-      grid-template-rows: 254px 182px;
-      grid-template-areas:
-        "bag passport"
-        "people people";
+/* imagens */
+.payments .container-flex .image-content {
+  grid-area: image-content;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, calc((100% - 24px) / 2));
+  grid-template-rows: 254px 182px;
+  grid-template-areas:
+    "bag passport"
+    "people people";
+}
 
-      .image {
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border-radius: 16px;
-      }
+/* imagens base */
+.payments .container-flex .image-content .image {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+}
 
-      .image.bag {
-        background-image: url(../img/tablet-e-desktop/montagem-japao.png);
-        grid-area: bag;
-      }
+/* imagens específicas */
+.payments .container-flex .image-content .image.bag {
+  background-image: url(../img/tablet-e-desktop/montagem-japao.png);
+  grid-area: bag;
+}
 
-      .image.passport {
-        background-image: url(../img/tablet-e-desktop/passport.png);
-        grid-area: passport;
-      }
+.payments .container-flex .image-content .image.passport {
+  background-image: url(../img/tablet-e-desktop/passport.png);
+  grid-area: passport;
+}
 
-      .image.people {
-        background-image: url(../img/tablet-e-desktop/people.png);
-        grid-area: people;
-      }
-    }
-  }
+.payments .container-flex .image-content .image.people {
+  background-image: url(../img/tablet-e-desktop/people.png);
+  grid-area: people;
 }
 
 /* DESKTOP */
 @media screen and (min-width: 1024px) {
-  .payments {
-    .container-flex {
-      flex-direction: row;
-      align-items: center;
+  .payments .container-flex {
+    flex-direction: row;
+    align-items: center;
+  }
 
-      .text-content {
-        width: 40%;
-      }
+  .payments .container-flex .text-content {
+    width: 40%;
+  }
 
-      .image-content {
-        width: 70%;
-      }
-    }
+  .payments .container-flex .image-content {
+    width: 70%;
   }
 }

@@ -1,72 +1,72 @@
+/* MOBILE */
 .destinations {
   padding: 24px;
   display: flex;
   flex-direction: column;
+}
 
-  .destination-items {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
-    position: relative;
+.destinations .destination-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  position: relative;
+}
 
-    .item {
-      margin-bottom: 40px;
-      /* background-color: var(--background-secundary-color); */
-      border-radius: 16px;
+.destinations .destination-items .item {
+  margin-bottom: 40px;
+  border-radius: 16px;
+}
 
-      header {
-        display: block;
-        background: transparent;
-        padding: 0;
+/* header do item */
+.destinations .destination-items .item header {
+  display: block;
+  background: transparent;
+  padding: 0;
+}
 
-        .img-item {
-          height: 360px;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-          border-radius: 16px;
-        }
+.destinations .destination-items .item header .img-item {
+  height: 360px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+}
 
-        h4 {
-          margin: 24px 0 24px;
-        }
-      }
+.destinations .destination-items .item header h4 {
+  margin: 24px 0 24px;
+}
 
-      p {
-        margin-bottom: 24px;
-        text-align: justify;
-        hyphens: auto;
-      }
+/* texto */
+.destinations .destination-items .item p {
+  margin-bottom: 24px;
+  text-align: justify;
+  hyphens: auto;
+}
 
-      footer {
-        .button {
-          width: 312px;
-          /* position: absolute;
-          bottom: 0; */
-        }
-      }
-    }
+/* footer */
+.destinations .destination-items .item footer .button {
+  width: 312px;
+}
 
-    /* 📲 Tablet */
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* 💻 Desktop */
-    @media (min-width: 1024px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .item:nth-child(1) {
-      .img-item {
-        background-image: url(../img/tablet-e-desktop/tokyo-tablet-desktop.png);
-      }
-    }
-
-    .item:nth-child(2) {
-      .img-item {
-        background-image: url(../img/tablet-e-desktop/osaka-tablet-desktop.png);
-      }
-    }
+/* 📲 Tablet */
+@media (min-width: 768px) {
+  .destinations .destination-items {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* 💻 Desktop */
+@media (min-width: 1024px) {
+  .destinations .destination-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* imagens específicas */
+.destinations .destination-items .item:nth-child(1) .img-item {
+  background-image: url(../img/tablet-e-desktop/tokyo-tablet-desktop.png);
+}
+
+.destinations .destination-items .item:nth-child(2) .img-item {
+  background-image: url(../img/tablet-e-desktop/osaka-tablet-desktop.png);
 }

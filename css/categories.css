@@ -1,70 +1,68 @@
-.categories {
-  .categories-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
+/* MOBILE */
+.categories .categories-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
 
-    .card {
-      text-decoration: none;
-      background-color: var(--background-secundary-color);
-      border-radius: 16px;
+.categories .categories-cards .card {
+  text-decoration: none;
+  background-color: var(--background-secundary-color);
+  border-radius: 16px;
+}
 
-      article {
-        height: 150px;
-        padding: 16px;
-        /* border: 1px solid red; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+.categories .categories-cards .card article {
+  height: 150px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-        div img {
-          height: 60px;
-          width: 60px;
-          /* border: 1px solid red; */
-        }
+.categories .categories-cards .card article div img {
+  height: 60px;
+  width: 60px;
+}
 
-        h4 {
-          font-size: 16px;
-          color: var(--text-primary-color);
-          /* border: 1px solid red; */
-          text-align: center;
-        }
-      }
-    }
+.categories .categories-cards .card article h4 {
+  font-size: 16px;
+  color: var(--text-primary-color);
+  text-align: center;
+}
 
-    /* 📲 Tablet */
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
+/* 📲 Tablet */
+@media (min-width: 768px) {
+  .categories .categories-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-      .card article {
-        height: 170px;
+  .categories .categories-cards .card article {
+    height: 170px;
+  }
 
-        div img {
-          height: 70px;
-          width: 70px;
-        }
+  .categories .categories-cards .card article div img {
+    height: 70px;
+    width: 70px;
+  }
 
-        h4 {
-          font-size: 18px;
-        }
-      }
-    }
+  .categories .categories-cards .card article h4 {
+    font-size: 18px;
+  }
+}
 
-    /* 💻 Desktop */
-    @media (min-width: 1024px) {
-      grid-template-columns: repeat(4, 1fr);
+/* 💻 Desktop */
+@media (min-width: 1024px) {
+  .categories .categories-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-      .card article {
-        div img {
-          height: 80px;
-          width: 80px;
-        }
+  .categories .categories-cards .card article div img {
+    height: 80px;
+    width: 80px;
+  }
 
-        h4 {
-          font-size: 28px;
-        }
-      }
-    }
+  .categories .categories-cards .card article h4 {
+    font-size: 28px;
   }
 }

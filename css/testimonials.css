@@ -27,22 +27,25 @@
   height: 86px;
 }
 
+/* profile content */
 .testimonial-container footer .profile-content {
   font-size: 20px;
   line-height: 32px;
   font-weight: var(--title-weight);
-
-  h4 {
-    margin: 0 0 8px;
-  }
 }
 
+.testimonial-container footer .profile-content h4 {
+  margin: 0 0 8px;
+}
+
+/* rating */
 .testimonial-container footer .profile-content .rating .star {
   font-size: 32px;
   line-height: 32px;
   color: var(--secundary-color);
 }
 
+/* DESKTOP GRANDE */
 @media screen and (min-width: 1440px) {
   .testimonial-container {
     flex-direction: row;

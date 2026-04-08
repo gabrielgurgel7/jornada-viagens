@@ -1,107 +1,108 @@
-.offers {
-  .offers-cards {
-    display: grid;
-    grid-template-columns: 1fr; /* Mobile (1 coluna) */
-    gap: 16px;
+/* MOBILE */
+.offers .offers-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
 
-    .card {
-      display: flex;
-      flex-direction: column;
-      /* align-items: center; */
-      color: var(--text-secudary-color);
-      height: 260px;
-      background-color: var(--background-tertiary-color);
-      box-sizing: border-box;
-      padding: 20px 12px;
-      border-radius: 16px;
-      text-align: center;
-      position: relative;
-      justify-content: center;
+.offers .offers-cards .card {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-secudary-color);
+  height: 260px;
+  background-color: var(--background-tertiary-color);
+  box-sizing: border-box;
+  padding: 20px 12px;
+  border-radius: 16px;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+}
 
-      header {
-        position: relative;
-        background: transparent;
-        padding: 0;
-        margin-bottom: 16px;
+/* header do card */
+.offers .offers-cards .card header {
+  position: relative;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 16px;
+}
 
-        p {
-          font-size: 16px;
-        }
+.offers .offers-cards .card header p {
+  font-size: 16px;
+}
 
-        h3 {
-          font-size: 28px;
+.offers .offers-cards .card header h3 {
+  font-size: 28px;
+}
 
-          span {
-            font-size: 20px;
-            margin-top: 16px;
-          }
-        }
-      }
-    }
+.offers .offers-cards .card header h3 span {
+  font-size: 20px;
+  margin-top: 16px;
+}
 
-    /* 📲 Tablet */
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-
-      .card {
-        height: 280px;
-
-        header {
-          p {
-            font-size: 18px;
-          }
-
-          h3 {
-            font-size: 32px;
-          }
-        }
-      }
-    }
-
-    /* 💻 Desktop */
-    @media (min-width: 1024px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* 🖥️ Desktop grande */
-    @media (min-width: 1200px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* BG DOS CARDS */
-    .japao {
-      background: url(../img/img-places/bg-card-japao.png) no-repeat
-        center/cover;
-    }
-
-    .san-andreas {
-      background: url(../img/img-places/bg-card-san-andreas.png) no-repeat
-        center/cover;
-    }
-
-    .paraiba {
-      background: url(../img/img-places/bg-card-paraiba.png) no-repeat
-        center/cover;
-    }
-
-    .manaus {
-      background: url(../img/img-places/bg-card-manaus.png) no-repeat
-        center/cover;
-    }
-
-    .overlay::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-color: rgba(0, 0, 0, 0.357);
-      border-radius: 16px;
-      z-index: 0;
-    }
-
-    .overlay > * {
-      position: relative;
-      z-index: 1;
-    }
+/* 📲 Tablet */
+@media (min-width: 768px) {
+  .offers .offers-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
+
+  .offers .offers-cards .card {
+    height: 280px;
+  }
+
+  .offers .offers-cards .card header p {
+    font-size: 18px;
+  }
+
+  .offers .offers-cards .card header h3 {
+    font-size: 32px;
+  }
+}
+
+/* 💻 Desktop */
+@media (min-width: 1024px) {
+  .offers .offers-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 🖥️ Desktop grande */
+@media (min-width: 1200px) {
+  .offers .offers-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* BG DOS CARDS */
+.offers .offers-cards .japao {
+  background: url(../img/img-places/bg-card-japao.png) no-repeat center/cover;
+}
+
+.offers .offers-cards .san-andreas {
+  background: url(../img/img-places/bg-card-san-andreas.png) no-repeat
+    center/cover;
+}
+
+.offers .offers-cards .paraiba {
+  background: url(../img/img-places/bg-card-paraiba.png) no-repeat center/cover;
+}
+
+.offers .offers-cards .manaus {
+  background: url(../img/img-places/bg-card-manaus.png) no-repeat center/cover;
+}
+
+/* overlay */
+.offers .offers-cards .overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.357);
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.offers .offers-cards .overlay > * {
+  position: relative;
+  z-index: 1;
 }
