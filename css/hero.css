@@ -1,7 +1,13 @@
 /* MOBILE */
-.hero .hero-img,
-.bottom-hero .hero-img {
+.hero,
+.bottom-hero {
   width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.bottom-hero {
+  margin-bottom: 0px;
 }
 
 .hero h2 {
